@@ -1,0 +1,22 @@
+[Sun Sep 04 13:22:34.312362 2022] [mpm_winnt:notice] [pid 21732:tid 336] AH00455: Apache/2.4.54 (Win64) PHP/8.1.10 configured -- resuming normal operations
+[Sun Sep 04 13:22:34.312362 2022] [mpm_winnt:notice] [pid 21732:tid 336] AH00456: Apache Lounge VS16 Server built: Jun 22 2022 09:58:15
+[Sun Sep 04 13:22:34.312362 2022] [core:notice] [pid 21732:tid 336] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Sun Sep 04 13:22:34.315364 2022] [mpm_winnt:notice] [pid 21732:tid 336] AH00418: Parent: Created child process 6584
+Apache server shutdown initiated...
+pm_winnt:notice] [pid 6584:tid 364] AH00354: Child: Starting 64 worker threads.
+[Mon Sep 05 00:15:18.411540 2022] [mpm_winnt:notice] [pid 21732:tid 336] AH00422: Parent: Received shutdown signal -- Shutting down the server.
+[Mon Sep 05 00:15:20.421663 2022] [mpm_winnt:notice] [pid 6584:tid 364] AH00364: Child: All worker threads have exited.
+[Mon Sep 05 00:15:20.459941 2022] [mpm_winnt:notice] [pid 21732:tid 336] AH00430: Parent: Child process 6584 exited successfully.
+[Tue Sep 06 19:42:38.189168 2022] [mpm_winnt:notice] [pid 22416:tid 344] AH00455: Apache/2.4.54 (Win64) PHP/8.1.10 configured -- resuming normal operations
+[Tue Sep 06 19:42:38.190167 2022] [mpm_winnt:notice] [pid 22416:tid 344] AH00456: Apache Lounge VS16 Server built: Jun 22 2022 09:58:15
+[Tue Sep 06 19:42:38.190167 2022] [core:notice] [pid 22416:tid 344] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Tue Sep 06 19:42:38.194167 2022] [mpm_winnt:notice] [pid 22416:tid 344] AH00418: Parent: Created child process 24548
+[Tue Sep 06 19:42:38.411287 2022] [mpm_winnt:notice] [pid 24548:tid 324] AH00354: Child: Starting 64 worker threads.
+[Tue Sep 06 23:29:19.547682 2022] [php:warn] [pid 24548:tid 1112] [client ::1:53638] PHP Warning:  Undefined array key "firstname" in C:\\work\\localhost\\src\\display.php on line 2, referer: http://localhost/templates/
+[Tue Sep 06 23:29:19.548657 2022] [php:warn] [pid 24548:tid 1112] [client ::1:53638] PHP Warning:  Undefined array key "lastname" in C:\\work\\localhost\\src\\display.php on line 3, referer: http://localhost/templates/
+[Thu Sep 08 00:19:46.449842 2022] [core:warn] [pid 5820:tid 312] AH00098: pid file C:/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu Sep 08 00:19:46.559641 2022] [mpm_winnt:notice] [pid 5820:tid 312] AH00455: Apache/2.4.54 (Win64) PHP/8.1.10 configured -- resuming normal operations
+[Thu Sep 08 00:19:46.559641 2022] [mpm_winnt:notice] [pid 5820:tid 312] AH00456: Apache Lounge VS16 Server built: Jun 22 2022 09:58:15
+[Thu Sep 08 00:19:46.559641 2022] [core:notice] [pid 5820:tid 312] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Thu Sep 08 00:19:46.559641 2022] [mpm_winnt:notice] [pid 5820:tid 312] AH00418: Parent: Created child process 9572
+[Thu Sep 08 00:19:47.346844 2022] [mpm_winnt:notice] [pid 9572:tid 324] AH00354: Child: Starting 64 worker threads.

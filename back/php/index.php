@@ -44,12 +44,12 @@ if (isset($_POST["x"]) && isset($_POST["y"]) && isset($_POST["r"])) {
 
         exit("
             <tr>
-                <th>$x</th>
-                <th>$y</th>
-                <th>$r</th>
-                <th>$current_time</th>
-                <th>$finish_time</th>
-                <th>$checked_hit</th>
+                <th class=\"result\">$x</th>
+                <th class=\"result\">$y</th>
+                <th class=\"result\">$r</th>
+                <th class=\"result\">$current_time</th>
+                <th class=\"result\">$finish_time</th>
+                <th class=\"result\">$checked_hit</th>
             </tr>");
     } else {
         exit("Сервер получил некорректные данные для проверки");

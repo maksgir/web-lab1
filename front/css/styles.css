@@ -48,14 +48,14 @@ div[place="header"] span {
 /*Селектор дочерних элементов для надписей*/
 
 div h3 {
-    background-color:rgb(113, 11, 197);
+    background-color: rgb(113, 11, 197);
     border-radius: 15px;
     margin-left: 15%;
     margin-right: 15%;
     text-align: center;
 }
 
-.choose{
+.choose {
     width: 100px;
     background-color: #402246;
     margin-left: 5%;
@@ -63,19 +63,24 @@ div h3 {
 
 /*Стили для таблицы*/
 
-.first-line{
-    background-color:rgb(113, 11, 197);
+.first-line {
+    background-color: rgb(113, 11, 197);
 }
-tr > th{
+
+tr > th {
     padding-left: 5px;
     padding-right: 5px;
 }
 
+.result {
+    color: rgba(224, 0, 253, 0.92);
+}
+
 /*Стиль для кнопки*/
 
-.send-button{
+.send-button {
     padding: 5px;
-    background-color:rgba(224, 0, 253, 0.92);
+    background-color: rgba(224, 0, 253, 0.92);
     border-radius: 15px;
     margin: 10px 15%;
     text-align: center;

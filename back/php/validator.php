@@ -1,5 +1,7 @@
 <?php
-class Validator {
+
+class Validator
+{
 
     private const X_MIN = -4;
     private const X_MAX = 4;
@@ -8,20 +10,21 @@ class Validator {
     private const R_MIN = 1;
     private const R_MAX = 3;
 
-    public function validate($x, $y, $r) {
+    public function validate($x, $y, $r)
+    {
         if (!is_numeric($x) || !is_numeric($y) || !is_numeric($r)) {
             return false;
         } else {
             $x_num = intval($x);
-            $y_num = floatval($y);
-            $r_num = intval($r);
+            $y_num = intval($y);
+            $r_num = floatval($r);
 
 
             if (!($x_num >= self::X_MIN && $x_num <= self::X_MAX)) {
                 return false;
             }
 
-            if (!($y_num > self::Y_MIN && $y_num < self::Y_MAX)) {
+            if (!($y_num >= self::Y_MIN && $y_num <= self::Y_MAX)) {
                 return false;
             }
 

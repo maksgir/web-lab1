@@ -1,8 +1,9 @@
 <?php
+include 'validator.php';
 
 date_default_timezone_set('UTC');
 
-function check_hit($x, $y, $r)
+function check_hit($x, $y, $r): bool
 {
     $triangle_hit = false;
     $circle_hit = false;
@@ -26,11 +27,32 @@ function check_hit($x, $y, $r)
     return $triangle_hit || $circle_hit || $square_hit;
 }
 
+$start = microtime(true);
+$validator = new Validator;
 
-$x = $_POST["x"];
-$y = $_POST["y"];
-$r = $_POST["r"];
+if (isset($_POST["x"]) && isset($_POST["y"]) && isset($_POST["r"])) {
+    if ($validator->validate($_POST["x"], $_POST["y"], $_POST["r"])) {
+        $x = intval($_POST["x"]);
+        $y = floatval($_POST["y"]);
+        $r = intval($_POST["r"]);
+        $timezone = $_POST["timezone"];
+        $current_time = date("H:i:s", time() - $timezone * 60);
 
+        $checked_hit = check_hit($x, $y, $r) ? "TRUE" : "FALSE";
 
-exit(check_hit($x, $y, $r) ? "попал" : "не попал");
+        $finish_time = number_format(microtime(true) - $start, 8, ".", "") * 1000000;
+
+        exit("
+            <tr>
+                <th>$x</th>
+                <th>$y</th>
+                <th>$r</th>
+                <th>$current_time</th>
+                <th>$finish_time</th>
+                <th>$checked_hit</th>
+            </tr>");
+    } else {
+        exit("Сервер получил некорректные данные для проверки");
+    }
+}
 ?>

@@ -14,7 +14,7 @@ function saveData() {
             data: {"x": x_value.trim(), "y": y_value.trim(), "r": r_value.trim(), "timezone": new Date().getTimezoneOffset()},
             success: function(data) {
                 // updateTable(data);
-                alert()
+                alert(data);
             },
             error: function(data) {
                 alert(data);

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <title>Веб</title>
     <link href="../css/styles.css" rel="stylesheet">
-    <script src="../js/update_table.js"></script>
+    <script src="../js/table_worker.js"></script>
     <script src="../js/submit_data.js"></script>
     <script src="../js/validator.js"></script>
     <script src="test.js"></script>
     <script src="../jquery/jquery-3.6.1.js"></script>
 </head>
 
-<body>
+<body onload="initialize_table()">
     <div place="header">
         <span>Лабораторная работа №1</span>
         <span>Гиря Максим Р32131</span>
@@ -79,11 +79,12 @@
                     <option>2.5</option>
                     <option>3</option>
                 </select></label><br><br><br>
-                <input class="send-button" type="submit" value="Проверить">
+                <input class="button" type="submit" value="Проверить">
             </form>
         </div>
         <div >
             <table id="result_table">
+                <button class="button" type="button" onclick="clean_table()">Очистить таблицу</button>
                 <tr class="first-line">
                     <th>X</th>
                     <th>Y</th>
@@ -92,11 +93,14 @@
                     <th>Время выполнения</th>
                     <th>Результат</th>
                 </tr>
+                <tbody id="table_body">
+
+                </tbody>
             </table>
         </div>
     </div>
     <div place="footer">
-        <span>Футер</span>
+        <span><a href="https://github.com/maksgir"><img src="../img/gitlogo.png"></a></span>
     </div>
 </body>
 </html>

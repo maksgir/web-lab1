@@ -95,3 +95,12 @@ pm_winnt:notice] [pid 6584:tid 364] AH00354: Child: Starting 64 worker threads.
 [Sun Sep 25 03:27:17.972374 2022] [core:notice] [pid 4984:tid 340] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
 [Sun Sep 25 03:27:17.972374 2022] [mpm_winnt:notice] [pid 4984:tid 340] AH00418: Parent: Created child process 7988
 [Sun Sep 25 03:27:18.255043 2022] [mpm_winnt:notice] [pid 7988:tid 392] AH00354: Child: Starting 64 worker threads.
+[Sun Oct 02 22:20:26.171908 2022] [php:warn] [pid 7988:tid 1040] [client ::1:54658] PHP Warning:  Undefined array key "clean" in C:\\work\\localhost\\back\\php\\index.php on line 43, referer: http://localhost/front/html/
+[Sun Oct 02 22:20:26.174891 2022] [php:warn] [pid 7988:tid 1040] [client ::1:54658] PHP Warning:  Undefined array key "table" in C:\\work\\localhost\\back\\php\\index.php on line 73, referer: http://localhost/front/html/
+[Sun Oct 02 22:22:51.139198 2022] [php:warn] [pid 7988:tid 1112] [client ::1:49219] PHP Warning:  Undefined array key "clean" in C:\\work\\localhost\\back\\php\\index.php on line 43, referer: http://localhost/front/html/
+[Mon Oct 03 18:53:36.703167 2022] [core:warn] [pid 4736:tid 320] AH00098: pid file C:/Apache24/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Mon Oct 03 18:53:36.785806 2022] [mpm_winnt:notice] [pid 4736:tid 320] AH00455: Apache/2.4.54 (Win64) PHP/8.1.10 configured -- resuming normal operations
+[Mon Oct 03 18:53:36.785806 2022] [mpm_winnt:notice] [pid 4736:tid 320] AH00456: Apache Lounge VS16 Server built: Jun 22 2022 09:58:15
+[Mon Oct 03 18:53:36.785806 2022] [core:notice] [pid 4736:tid 320] AH00094: Command line: 'C:\\Apache24\\bin\\httpd.exe -d C:/Apache24'
+[Mon Oct 03 18:53:36.785806 2022] [mpm_winnt:notice] [pid 4736:tid 320] AH00418: Parent: Created child process 8044
+[Mon Oct 03 18:53:37.095803 2022] [mpm_winnt:notice] [pid 8044:tid 324] AH00354: Child: Starting 64 worker threads.

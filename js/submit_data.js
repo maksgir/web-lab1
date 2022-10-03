@@ -9,7 +9,7 @@ function saveData() {
         console.log(new Date().getTimezoneOffset());
         $.ajax({
             type: "POST",
-            url: "../../back/php/index.php",
+            url: "../php/index.php",
             async: false,
             data: {
                 "x": x_value.trim(),

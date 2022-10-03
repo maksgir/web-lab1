@@ -1,7 +1,7 @@
 function initialize_table() {
     $.ajax({
         type: "GET",
-        url: "../../back/php/index.php",
+        url: "../php/index.php",
         async: false,
         success: function(response) {
             console.log(response);
@@ -16,7 +16,7 @@ function initialize_table() {
 function clean_table() {
     $.ajax({
         type: "POST",
-        url: "../../back/php/index.php",
+        url: "../php/index.php",
         async: false,
         data: {"clean" : 'true'},
         success: function(response) {
